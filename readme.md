@@ -1,2 +1,2 @@
 # Webpack Bundler
-Basic config
+Basic webpack config with sass babel html...

@@ -1,5 +1,67 @@
-$bg: blue;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$bg: rgb(42, 42, 102);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, *, a, input, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
 
 body {
+    margin: 0 auto;
+    width: calc(100% - 2rem);
+    height: auto;
     background: $bg;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+
+    h1.logo {
+        color: rgb(62, 74, 117);
+        padding: .5rem 1rem;
+        background-color: rgba(255, 255, 255, 0.856);
+        border-radius: .3rem;
+        display: inline-block;
+    }
+}
+
+section.output-section {
+    margin: 2rem 0 1rem 0;
+
+    p {
+        margin-bottom: .5rem;
+        color: rgb(212, 212, 212);
+        font-size: .9rem;
+    }
+
+    #output {
+        background-color: rgba(68, 165, 4, 0.795);
+        color: rgb(2, 2, 2);
+        font-weight: 800;
+        font-size: 1.2rem;
+        padding: 4px 20px;
+        border-radius: .3rem;
+        display: inline-block;
+    }
+}
+
+img.sleeping {
+    width: 200px;
+    height: auto;
+    border-radius: .3rem;
+    pointer-events: none;
+    display: block;
 }
